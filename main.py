@@ -11,8 +11,9 @@ st.subheader("Mito AI Implementation on Streamlit")
 
 @st.cache_data
 def get_tesla_data():
-    csv_url = 'https://drive.google.com/uc?export=download&id=1J_Qa5gpgq0qlT8lg37XDOKp6RJQJZ647'
-    df = pd.read_csv(csv_url)
+    uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+    df = pd.read_csv(uploaded_file)
+    #csv_url = 'https://drive.google.com/uc?export=download&id=1J_Qa5gpgq0qlT8lg37XDOKp6RJQJZ647'
     #df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv')
     #df = df.drop(0)
     #df['volume'] = df['volume'].astype(float)
