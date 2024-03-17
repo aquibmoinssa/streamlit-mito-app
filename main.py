@@ -6,6 +6,8 @@ from mitosheet.streamlit.v1 import spreadsheet
 from mitosheet.streamlit.v1.spreadsheet import _get_mito_backend
 
 st.set_page_config(layout="wide")
+st.header("AIvigorate")
+st.subheader("Mito AI Implementation on Streamlit")
 
 @st.cache_data
 def get_tesla_data():
