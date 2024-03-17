@@ -9,9 +9,11 @@ st.set_page_config(layout="wide")
 
 @st.cache_data
 def get_tesla_data():
-    df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv')
-    df = df.drop(0)
-    df['volume'] = df['volume'].astype(float)
+    csv_url = 'https://drive.google.com/uc?export=download&id=1J_Qa5gpgq0qlT8lg37XDOKp6RJQJZ647'
+    df = pd.read_csv(csv_url)
+    #df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/tesla-stock-price.csv')
+    #df = df.drop(0)
+    #df['volume'] = df['volume'].astype(float)
     return df
 
 tesla_data = get_tesla_data()
