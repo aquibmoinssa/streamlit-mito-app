@@ -14,7 +14,7 @@ with st.sidebar:
     st.subheader("")
     "[Back to AIvigorate.ai](http://www.aivigorate.ai/)"
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 st.header("AIvigorate")
 st.subheader("Mito AI Implementation on Streamlit")
 #uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
