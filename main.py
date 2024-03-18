@@ -5,6 +5,15 @@ import streamlit as st
 from mitosheet.streamlit.v1 import spreadsheet
 from mitosheet.streamlit.v1.spreadsheet import _get_mito_backend
 
+with st.sidebar:
+    
+    "[View the source code](https://github.com/aquibmoinssa/streamlit-mito-app)"
+    st.subheader("Based on Mito-for-Streamlit Examples")
+    st.subheader("")
+    st.subheader("Aquib Moin @ AIvigorate")
+    st.subheader("")
+    "[Back to AIvigorate.ai](http://www.aivigorate.ai/)"
+
 st.set_page_config(layout="wide")
 st.header("AIvigorate")
 st.subheader("Mito AI Implementation on Streamlit")
