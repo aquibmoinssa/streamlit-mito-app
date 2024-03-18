@@ -5,6 +5,7 @@ import streamlit as st
 from mitosheet.streamlit.v1 import spreadsheet
 from mitosheet.streamlit.v1.spreadsheet import _get_mito_backend
 
+st.set_page_config(layout="wide")
 with st.sidebar:
     st.header("AIvigorate")
     st.subheader("")
@@ -13,7 +14,7 @@ with st.sidebar:
     st.subheader("")
     "[Back to AIvigorate.ai](http://www.aivigorate.ai/)"
 
-#st.set_page_config(layout="wide")
+
 #st.header("AIvigorate")
 st.header("Mito AI Implementation on Streamlit")
 #uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
