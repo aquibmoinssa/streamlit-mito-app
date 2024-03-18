@@ -9,9 +9,10 @@ st.set_page_config(layout="wide")
 st.header("AIvigorate")
 st.subheader("Mito AI Implementation on Streamlit")
 #uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+filepath = st.text_input('Enter your csv file path')
 
 def get_data():
-    filepath = st.text_input('Enter your csv file path')
+    
     #csv_url = 'https://drive.google.com/uc?export=download&id=1J_Qa5gpgq0qlT8lg37XDOKp6RJQJZ647'
     df = pd.read_csv(filepath)
     
