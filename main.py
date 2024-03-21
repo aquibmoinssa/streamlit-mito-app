@@ -7,17 +7,24 @@ from mitosheet.streamlit.v1.spreadsheet import _get_mito_backend
 
 st.set_page_config(layout="wide")
 with st.sidebar:
-    st.header("AIvigorate")
+    st.title("Mito AI on Streamlit")
     st.subheader("")
     st.subheader("Based on Mito-for-Streamlit Examples")
-    "[View the source code](https://github.com/aquibmoinssa/streamlit-mito-app)"
     st.subheader("")
     "[Back to AIvigorate.ai](http://www.aivigorate.ai/)"
 
 
 #st.header("AIvigorate")
-st.header("Mito AI Implementation on Streamlit")
+st.header("Mito AI-powered Spreadsheet")
 #uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+
+st.markdown("""
+
+Provide a direct download link to a .csv file hosted on a data storage platform (e.g. Google Drive, Dropbox) and work on your data using AI-powered spreadsheet by Mito AI implemented on Streamlit.
+
+Mito AI will automatically generate the python code for whatever operations your instruct AI to perform.
+
+""")
 
 def get_data():
     filepath = st.text_input('Enter your csv file path')
